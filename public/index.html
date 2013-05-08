@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <!-- Status bar styles -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <!-- Telephone format detection -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- Fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Title -->
+    <meta name="apple-mobile-web-app-title" content="Lab">
+
+    <link type="text/css" rel="stylesheet" href="/styles/style.css"/>
+    <link type="text/css" rel="stylesheet" href="font-awesome.css"/>
+  </head>
+  <body>
+    <canvas id="pcanvas"></canvas>
+
+    <div id="quote" onmouseover="clearQuote()"></div>
+
+    <div id="newquote" class="button"><i class="icon-plus-sign"></i></div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/assets/processing.js"></script>
+    <script type="text/javascript" src="/app/sockets.js"></script>
+    <script type="text/javascript" src="/app/app.js"></script>
+  </body>
+</html>
